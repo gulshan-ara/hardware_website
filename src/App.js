@@ -5,6 +5,7 @@ import CardRow from "./components/card";
 import TeamRow from "./components/team";
 import styled from "styled-components";
 import TransparentCardRow from "./components/feature";
+import RowWithColumn from "./components/learnMore";
 
 const Headline = styled.div`
 	text-align: center;
@@ -23,6 +24,7 @@ function App() {
 				<TeamRow />
 			</div>
 			<TransparentCardRow/>
+			<RowWithColumn/>
 		</div>
 	);
 }
