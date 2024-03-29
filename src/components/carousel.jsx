@@ -73,6 +73,18 @@ const styles = `
   width: 100%;
   height: 500px;
 }
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    transform: translate(50%, -80%); /* Adjust caption position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption {
+    transform: translate(20%, -80%); /* Further adjust caption position for even smaller screens */
+  }
+}
 `;
 
 // Inject the styles into the document
