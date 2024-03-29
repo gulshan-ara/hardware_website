@@ -14,7 +14,7 @@ const Headline = styled.div`
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<NavBar />
 			<ImageCarousel />
 			<CardRow />

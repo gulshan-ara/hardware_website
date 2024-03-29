@@ -90,7 +90,7 @@ const TeamRow = () => {
 		<CardContainer>
 			<Card>
 				<ImageContainer>
-					<Image src="/assets/images/image_1.png" alt="About Us" />
+					<Image src="./assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Ayush Sharma</Name>
 				<Designation>Director</Designation>
@@ -111,7 +111,7 @@ const TeamRow = () => {
 			</Card>
 			<Card>
 				<ImageContainer>
-					<Image src="/assets/images/image_1.png" alt="About Us" />
+					<Image src="./assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Pankaj Rana</Name>
 				<Designation>Director</Designation>
@@ -132,7 +132,7 @@ const TeamRow = () => {
 			</Card>
 			<Card>
 				<ImageContainer>
-					<Image src="/assets/images/image_1.png" alt="About Us" />
+					<Image src="./assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Gabriella</Name>
 				<Designation>Director</Designation>
