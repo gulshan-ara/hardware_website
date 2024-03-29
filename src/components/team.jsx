@@ -1,5 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const fall = keyframes`
   from {
@@ -59,19 +61,29 @@ const Image = styled.img`
 	height: 200px;
 	border-radius: 50%; /* Make the image round */
 	object-fit: cover; /* Maintain aspect ratio */
-  animation: ${fall} 0.5s ease forwards; /* Play the fall animation */
+	animation: ${fall} 0.5s ease forwards; /* Play the fall animation */
 	opacity: 0;
 `;
 
 const Name = styled.h2`
 	font-size: 1.5rem;
 	margin-bottom: 10px;
-  text-align: center;
+	text-align: center;
 `;
 
-const Description = styled.p`
+const Designation = styled.p`
 	color: #666;
+	text-align: center;
+	font-weight: 700;
 `;
+
+const SocialMediaLinks = styled.div`
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center; 
+  margin-top: 10px;
+`;
+
 
 const TeamRow = () => {
 	return (
@@ -81,36 +93,63 @@ const TeamRow = () => {
 					<Image src="/assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Ayush Sharma</Name>
-				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</Description>
+				<Designation>Director</Designation>
+				<SocialMediaLinks>
+					<FontAwesomeIcon
+						icon={faFacebookF}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faTwitter}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faLinkedinIn}
+						style={{ marginRight: "10px" }}
+					/>
+				</SocialMediaLinks>
 			</Card>
 			<Card>
 				<ImageContainer>
 					<Image src="/assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Pankaj Rana</Name>
-				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</Description>
+				<Designation>Director</Designation>
+				<SocialMediaLinks>
+					<FontAwesomeIcon
+						icon={faFacebookF}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faTwitter}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faLinkedinIn}
+						style={{ marginRight: "10px" }}
+					/>
+				</SocialMediaLinks>
 			</Card>
 			<Card>
 				<ImageContainer>
 					<Image src="/assets/images/image_1.png" alt="About Us" />
 				</ImageContainer>
 				<Name>Gabriella</Name>
-				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</Description>
+				<Designation>Director</Designation>
+				<SocialMediaLinks>
+					<FontAwesomeIcon
+						icon={faFacebookF}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faTwitter}
+						style={{ marginRight: "10px" }}
+					/>
+					<FontAwesomeIcon
+						icon={faLinkedinIn}
+						style={{ marginRight: "10px" }}
+					/>
+				</SocialMediaLinks>
 			</Card>
 		</CardContainer>
 	);
