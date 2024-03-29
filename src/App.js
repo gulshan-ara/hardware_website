@@ -6,6 +6,7 @@ import TeamRow from "./components/team";
 import styled from "styled-components";
 import TransparentCardRow from "./components/feature";
 import RowWithColumn from "./components/learnMore";
+import TestimonialCarousel from "./components/testimonial";
 
 const Headline = styled.div`
 	text-align: center;
@@ -23,8 +24,12 @@ function App() {
 				<Headline>The Leadership Team</Headline>
 				<TeamRow />
 			</div>
-			<TransparentCardRow/>
-			<RowWithColumn/>
+			<TransparentCardRow />
+			<RowWithColumn />
+			<div style={{margin: "30px"}}>
+				<Headline>Testimonials</Headline>
+				<TestimonialCarousel />
+			</div>
 		</div>
 	);
 }
