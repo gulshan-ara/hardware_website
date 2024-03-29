@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/hardware_website/static/css/main.6d0ec813.css",
-    "main.js": "/hardware_website/static/js/main.414798e3.js",
+    "main.js": "/hardware_website/static/js/main.d5e0534a.js",
     "static/media/slick.svg": "/hardware_website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/hardware_website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/hardware_website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/hardware_website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/hardware_website/index.html",
     "main.6d0ec813.css.map": "/hardware_website/static/css/main.6d0ec813.css.map",
-    "main.414798e3.js.map": "/hardware_website/static/js/main.414798e3.js.map"
+    "main.d5e0534a.js.map": "/hardware_website/static/js/main.d5e0534a.js.map"
   },
   "entrypoints": [
     "static/css/main.6d0ec813.css",
-    "static/js/main.414798e3.js"
+    "static/js/main.d5e0534a.js"
   ]
 }
