@@ -11,7 +11,9 @@
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
+		"bootstrap": "^5.3.3",
 		"react": "^18.2.0",
+		"react-bootstrap": "^2.10.2",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
 		"react-slick": "^0.30.2",
@@ -35,11 +37,11 @@
 	},
 	"browserslist": {
 		"production": [
-      ">0.2%",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all"
-    ],
+			">0.2%",
+			"not dead",
+			"not ie <= 11",
+			"not op_mini all"
+		],
 		"development": [
 			"last 1 chrome version",
 			"last 1 firefox version",

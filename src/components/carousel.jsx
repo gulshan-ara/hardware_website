@@ -1,73 +1,30 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import styled from "styled-components";
-
-// Define styled components
-const CarouselItem = styled.div`
-  position: relative;
-`;
-
-const Caption = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(150px, -80%);
-  text-align: left;
-`;
-
-const Title = styled.h2`
-  margin: 3px 0;
-  font-size: 40px;
-  color: #535e65;
-`;
-
-const Description = styled.p`
-  margin: 3px 0;
-  font-size: 30px;
-  color: #fff;
-`;
-
-const StyledImage = styled.img`
-  width: 100%;
-  height: 500px;
-`;
+import { Carousel } from 'react-bootstrap';
 
 export const ImageCarousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
   return (
-    <Slider {...settings}>
-      <CarouselItem>
-        <Caption>
-          <Title>Bathroom Hardware</Title>
-          <Description>Serenity in the silence</Description>
-        </Caption>
-        <StyledImage src="./assets/images/image_1.png" alt="Image 1" />
-      </CarouselItem>
-      <CarouselItem>
-        <Caption>
-          <Title>Door Hardware</Title>
-          <Description>Let the class speak the truth</Description>
-        </Caption>
-        <StyledImage src="./assets/images/image_1.png" alt="Image 2" />
-      </CarouselItem>
-      <CarouselItem>
-        <Caption>
-          <Title>Furniture Fittings</Title>
-          <Description>Crafted from metal, Curated from heart</Description>
-        </Caption>
-        <StyledImage src="./assets/images/image_1.png" alt="Image 3" />
-      </CarouselItem>
-    </Slider>
+    <Carousel controls={false} interval={1000}>
+      <Carousel.Item>
+        <img src="./assets/images/image_1.png" className="d-block w-100" alt="Image 1" />
+        <Carousel.Caption>
+          <h3>Bathroom Hardware</h3>
+          <p>Serenity in the silence</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="./assets/images/image_1.png" className="d-block w-100" alt="Image 2" />
+        <Carousel.Caption>
+          <h3>Door Hardware</h3>
+          <p>Let the class speak the truth</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src="./assets/images/image_1.png" className="d-block w-100" alt="Image 3" />
+        <Carousel.Caption>
+          <h3>Furniture Fittings</h3>
+          <p>Crafted from metal, Curated from heart</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 };

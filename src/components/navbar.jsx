@@ -1,82 +1,77 @@
 import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
 
 export const NavBar = () => {
+	const styles = `
+    .navbar {
+      background-color: #ffffff;
+      padding: 10px 20px;
+    }
+
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+
+    .nav-link {
+      color: #000000;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
+  `;
+
 	return (
-		<nav className="navbar">
-			<section className="logo-section">
-				<img src="./assets/images/logo.png" alt="Logo" />
-			</section>
-			<section className="links-section">
-				<ul>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Contact Us</a>
-					</li>
-					<li>
-						<a href="#">Products</a>
-					</li>
-					<li>
-						<a href="#">Events</a>
-					</li>
-					<li>
-						<a href="#">Services</a>
-					</li>
-					<li>
-						<a href="#">Media</a>
-					</li>
-				</ul>
-			</section>
-		</nav>
+		<>
+			<style>{styles}</style>
+			<Navbar bg="light" expand="lg">
+				<Navbar.Brand href="#">
+					<img
+						src="./assets/images/logo.png"
+						alt="Logo"
+						className="d-inline-block align-top"
+					/>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="#" className="nav-link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              About
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              Contact Us
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              Products
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              Events
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              Services
+            </Nav.Link>
+            <Nav.Link href="#" className="nav-link">
+              Media
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+			</Navbar>
+		</>
 	);
 };
 
-// CSS styles
-const styles = `
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    color: white;
-}
-
-.logo-section img {
-    width: 100px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.links-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.links-section ul li {
-    display: inline-block;
-    margin-left: 25px; 
-		padding-right: 25px;
-		border-right: 2px solid grey;
-}
-
-.links-section ul li a {
-    color: black;
-    text-decoration: none;
-		font-size: 18px;
-		font-weight: bold;
-}
-
-.links-section ul li a:hover {
-    text-decoration: underline;
-}
-`;
-
-// Inject the styles into the document
-const styleElement = document.createElement("style");
-styleElement.innerHTML = styles;
-document.head.appendChild(styleElement);
+export default NavBar;
