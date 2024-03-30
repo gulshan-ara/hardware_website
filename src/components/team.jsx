@@ -16,15 +16,15 @@ const fall = keyframes`
 
 const CardContainer = styled.div`
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap; /* Allow cards to wrap to the next row */
 	justify-content: space-around;
 	margin: 50px 10%;
 	/* Responsive styles */
+	@media (max-width: 768px) {
+		margin: 50px 5%;
+	}
 	@media (max-width: 480px) {
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: center;
-		margin: 10px 2%;
+		margin: 20px 2%;
 	}
 `;
 
@@ -40,14 +40,10 @@ const Card = styled.div`
 	}
 	/* Responsive styles */
 	@media (max-width: 768px) {
-		width: calc(
-			50% - 40px
-		); /* Make cards take 50% width on screens smaller than 768px */
+		width: calc(50% - 40px); /* Make cards take 50% width on screens smaller than 768px */
 	}
 	@media (max-width: 480px) {
-		width: calc(
-			100% - 40px
-		); /* Make cards take 100% width on screens smaller than 480px */
+		width: calc(100% - 40px); /* Make cards take 100% width on screens smaller than 480px */
 	}
 `;
 
@@ -78,12 +74,10 @@ const Designation = styled.p`
 `;
 
 const SocialMediaLinks = styled.div`
-  display: flex; 
-  justify-content: space-evenly;
-  align-items: center; 
-  margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 `;
-
 
 const TeamRow = () => {
 	return (
