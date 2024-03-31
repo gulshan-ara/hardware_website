@@ -51,7 +51,7 @@ const Description = styled.p`
 	color: #666;
 `;
 
-const CardRow = () => {
+const IntroRow = () => {
 	return (
 		<CardContainer>
 			<Card>
@@ -103,4 +103,4 @@ const CardRow = () => {
 	);
 };
 
-export default CardRow;
+export default IntroRow;

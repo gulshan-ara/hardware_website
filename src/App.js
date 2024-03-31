@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import { NavBar } from "./components/navbar";
 import { ImageCarousel } from "./components/carousel";
-import CardRow from "./components/card";
+import IntroRow from "./components/card";
 import TeamRow from "./components/team";
 import styled from "styled-components";
-import TransparentCardRow from "./components/feature";
-import RowWithColumn from "./components/learnMore";
+import CompanyFeaturesRow from "./components/feature";
+import LearnMoreRow from "./components/learnMore";
 import TestimonialCarousel from "./components/testimonial";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
 
@@ -33,15 +33,15 @@ function App() {
 		<div>
 			<NavBar />
 			<ImageCarousel />
-			<CardRow />
+			<IntroRow />
 			<div>
 				<Headline>The Leadership Team</Headline>
 				<div ref={teamRowRef}>{teamRowVisible && <TeamRow />}</div>
 			</div>
 			<div ref={transparentCardRowRef}>
-				{transparentCardRowVisible && <TransparentCardRow />}
+				{transparentCardRowVisible && <CompanyFeaturesRow />}
 			</div>
-			<RowWithColumn />
+			<LearnMoreRow />
 			<div style={{ margin: "30px" }}>
 				<Headline>Testimonials</Headline>
 				<div ref={testimonialCarouselRef}>

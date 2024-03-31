@@ -92,7 +92,7 @@ const Description = styled.p`
 `;
 
 // Define the TransparentCardRow component
-const TransparentCardRow = () => {
+const CompanyFeaturesRow = () => {
 	const [sqft, setSqft] = useState(0);
 	const [member, setMember] = useState(0);
 
@@ -157,4 +157,4 @@ const TransparentCardRow = () => {
 	);
 };
 
-export default TransparentCardRow;
+export default CompanyFeaturesRow;
