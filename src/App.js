@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { NavBar } from "./components/navbar";
 import { ImageCarousel } from "./components/carousel";
 import CardRow from "./components/card";
@@ -7,6 +7,7 @@ import styled from "styled-components";
 import TransparentCardRow from "./components/feature";
 import RowWithColumn from "./components/learnMore";
 import TestimonialCarousel from "./components/testimonial";
+import useIntersectionObserver from "./hooks/useIntersectionObserver";
 
 const Headline = styled.div`
 	text-align: center;
@@ -15,6 +16,19 @@ const Headline = styled.div`
 `;
 
 function App() {
+	const teamRowRef = useRef(null);
+	const teamRowVisible = useIntersectionObserver(teamRowRef);
+
+	const testimonialCarouselRef = useRef(null);
+	const testimonialCarouselVisible = useIntersectionObserver(
+		testimonialCarouselRef
+	);
+
+	const transparentCardRowRef = useRef(null);
+	const transparentCardRowVisible = useIntersectionObserver(
+		transparentCardRowRef
+	);
+
 	return (
 		<div>
 			<NavBar />
@@ -22,13 +36,17 @@ function App() {
 			<CardRow />
 			<div>
 				<Headline>The Leadership Team</Headline>
-				<TeamRow />
+				<div ref={teamRowRef}>{teamRowVisible && <TeamRow />}</div>
 			</div>
-			<TransparentCardRow />
+			<div ref={transparentCardRowRef}>
+				{transparentCardRowVisible && <TransparentCardRow />}
+			</div>
 			<RowWithColumn />
-			<div style={{margin: "30px"}}>
+			<div style={{ margin: "30px" }}>
 				<Headline>Testimonials</Headline>
-				<TestimonialCarousel />
+				<div ref={testimonialCarouselRef}>
+					{testimonialCarouselVisible && <TestimonialCarousel />}
+				</div>
 			</div>
 		</div>
 	);
