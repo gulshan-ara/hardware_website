@@ -8,6 +8,7 @@ import CompanyFeaturesRow from "./components/feature";
 import LearnMoreRow from "./components/learnMore";
 import TestimonialCarousel from "./components/testimonial";
 import useIntersectionObserver from "./hooks/useIntersectionObserver";
+import Footer from "./components/footer";
 
 const Headline = styled.div`
 	text-align: center;
@@ -48,6 +49,7 @@ function App() {
 					{testimonialCarouselVisible && <TestimonialCarousel />}
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 }
