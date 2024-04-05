@@ -18,10 +18,11 @@ const CardContainer = styled.div`
 `;
 
 const Card = styled.div`
+	flex: 1;
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	padding: 20px;
+	padding: 20px 20px;
 	margin: 20px;
 	transition: transform 0.3s ease; /* Added transition property */
 	&:hover {
@@ -63,10 +64,12 @@ const IntroRow = () => {
 					About Us
 				</Title>
 				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					F​ounded on the principles of integrity, reliability, and
+					customer-centricity, ZSS began its journey as a provider of
+					OEM products to a diverse clientele across industries. Over
+					the years, we have established ourselves as a trusted
+					partner, known for delivering high-quality products and
+					exceptional service.
 				</Description>
 			</Card>
 			<Card>
@@ -78,10 +81,11 @@ const IntroRow = () => {
 					Vision
 				</Title>
 				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Our vision is to redefine the hardware market by leveraging
+					technology, industry expertise, and strategic partnerships
+					to deliver unparalleled value to our clients. We envision a
+					future where product delivery is efficient and tailored to
+					the unique requirements of each customer.
 				</Description>
 			</Card>
 			<Card>
@@ -93,10 +97,11 @@ const IntroRow = () => {
 					Mission
 				</Title>
 				<Description>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					With the history so rich and the vision so clear, our
+					mission is to disrupt the hardware market with unmatched
+					product quality and consistent innovation. We thrive to
+					deliver the best experience to our customers as well as our
+					channel partners.
 				</Description>
 			</Card>
 		</CardContainer>

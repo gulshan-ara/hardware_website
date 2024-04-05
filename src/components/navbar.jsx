@@ -39,7 +39,7 @@ export const NavBar = () => {
 			<Navbar bg="light" expand="lg">
 				<Navbar.Brand href="#">
 					<img
-						src="./assets/images/logo.png"
+						src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
 						alt="Logo"
 						className="d-inline-block align-top"
 					/>
@@ -47,7 +47,7 @@ export const NavBar = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="ml-auto">
-						<Link to="/" className="nav-link">
+						<Link to="/hardware_website" className="nav-link">
 							Home
 						</Link>
 						<Link to="#" className="nav-link">
@@ -71,7 +71,7 @@ export const NavBar = () => {
 						<Link to="#" className="nav-link">
 							Career
 						</Link>
-						<Link to="/contact-us" className="nav-link">
+						<Link to="/hardware_website/contact-us" className="nav-link">
 							Contact Us
 						</Link>
 					</Nav>

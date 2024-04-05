@@ -7,7 +7,7 @@ const ContactUs = () => {
 			<Row>
 				<Col md={12}>
 					<img
-						src="./assets/images/image_1.png"
+						src={process.env.PUBLIC_URL + "/assets/images/image_1.png"}
 						alt="Contact Us"
 						style={{ width: "100%", marginBottom: "20px" }}
 					/>
