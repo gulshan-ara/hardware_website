@@ -63,7 +63,7 @@ const Image = styled.img`
 
 const Name = styled.h2`
 	font-size: 1.5rem;
-	margin-bottom: 10px;
+	margin: 20px 0 10px;
 	text-align: center;
 `;
 
@@ -71,12 +71,12 @@ const Designation = styled.p`
 	color: #666;
 	text-align: center;
 	font-weight: 700;
+	margin-top: 0;
 `;
 
 const SocialMediaLinks = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
 `;
 
 const TeamRow = () => {

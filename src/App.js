@@ -4,6 +4,7 @@ import { NavBar } from "./components/navbar";
 import Footer from "./components/footer";
 import ContactUs from "./pages/contact";
 import Home from "./pages/home";
+import Disclaimer from "./pages/disclaimer";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Routes>
 				<Route exact path="/hardware_website" element={<Home />} />
 				<Route path="/hardware_website/contact-us" element={<ContactUs />} />
+				<Route path="/hardware_website/disclaimer" element={<Disclaimer />}/>
 			</Routes>
 			<Footer />
 		</div>

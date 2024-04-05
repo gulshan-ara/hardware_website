@@ -57,16 +57,10 @@ export const NavBar = () => {
 							Products
 						</Link>
 						<Link to="#" className="nav-link">
-							Events
-						</Link>
-						<Link to="#" className="nav-link">
 							Services
 						</Link>
 						<Link to="#" className="nav-link">
 							Blog
-						</Link>
-						<Link to="#" className="nav-link">
-							Club
 						</Link>
 						<Link to="#" className="nav-link">
 							Career

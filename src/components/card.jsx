@@ -50,6 +50,7 @@ const Title = styled.h2`
 
 const Description = styled.p`
 	color: #666;
+	text-align: justify;
 `;
 
 const IntroRow = () => {

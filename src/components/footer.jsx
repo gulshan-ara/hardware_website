@@ -92,7 +92,7 @@ const Footer = () => {
             </a>
             <Separator>|</Separator>
             <a
-              href="/disclaimer"
+              href="hardware_website/disclaimer"
               style={{ color: "#fff", textDecoration: "none" }}
             >
               Disclaimer
