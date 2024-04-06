@@ -1,29 +1,35 @@
 import { useState, useEffect } from "react";
 
 function useIntersectionObserver(ref) {
-	const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-	useEffect(() => {
-		const currentRef = ref.current;
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				setIsVisible(entry.isIntersecting);
-			},
-			{ threshold: 0.05 }
-		);
+  useEffect(() => {
+    const currentRef = ref.current;
+    let timeoutId;
 
-		if (currentRef) {
-			observer.observe(currentRef);
-		}
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          setIsVisible(entry.isIntersecting);
+        }, 500); // Debounce time in milliseconds
+      },
+      { threshold: 0.05 } // Adjust the threshold value as needed
+    );
 
-		return () => {
-			if (currentRef) {
-				observer.unobserve(currentRef);
-			}
-		};
-	}, [ref]);
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
 
-	return isVisible;
+    return () => {
+      clearTimeout(timeoutId);
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
 }
 
 export default useIntersectionObserver;

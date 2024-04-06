@@ -37,7 +37,7 @@ export const NavBar = () => {
 		<>
 			<style>{styles}</style>
 			<Navbar bg="light" expand="lg">
-				<Navbar.Brand href="#">
+				<Navbar.Brand>
 					<img
 						src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
 						alt="Logo"
