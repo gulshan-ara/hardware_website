@@ -62,7 +62,7 @@ export const NavBar = () => {
 						<Link to="#" className="nav-link">
 							Blog
 						</Link>
-						<Link to="#" className="nav-link">
+						<Link to="/hardware_website/career" className="nav-link">
 							Career
 						</Link>
 						<Link to="/hardware_website/contact-us" className="nav-link">

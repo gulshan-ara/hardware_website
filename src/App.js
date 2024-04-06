@@ -6,6 +6,7 @@ import ContactUs from "./pages/contact";
 import Home from "./pages/home";
 import Disclaimer from "./pages/disclaimer";
 import Privacy from "./pages/privacy";
+import Career from "./pages/career";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="/hardware_website/contact-us" element={<ContactUs />} />
 				<Route path="/hardware_website/disclaimer" element={<Disclaimer />}/>
 				<Route path="/hardware_website/privacy-policy" element={<Privacy />}/>
+				<Route path="/hardware_website/career" element={<Career />} />
 			</Routes>
 			<Footer />
 		</div>
