@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Disclaimer from "./pages/disclaimer";
 import Privacy from "./pages/privacy";
 import Career from "./pages/career";
+import TermsnConditions from "./pages/termsnconditions";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/hardware_website/disclaimer" element={<Disclaimer />}/>
 				<Route path="/hardware_website/privacy-policy" element={<Privacy />}/>
 				<Route path="/hardware_website/career" element={<Career />} />
+				<Route path="/hardware_website/terms-and-conditions" element={<TermsnConditions />} />
 			</Routes>
 			<Footer />
 		</div>

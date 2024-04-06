@@ -70,14 +70,6 @@ const CenterLinks = styled.div`
 	}
 `;
 
-const Separator = styled.span`
-	color: #fff;
-	margin: 10px 0;
-
-	@media (min-width: 768px) {
-		margin: 0 10px;
-	}
-`;
 
 const Footer = () => {
 	return (
@@ -87,11 +79,16 @@ const Footer = () => {
 					<CenterLinks>
 						<Link
 							to="/hardware_website/privacy-policy"
-							style={{ color: "#fff", textDecoration: "none" }}
+							style={{ color: "#fff", textDecoration: "none", marginRight: "10px"}}
 						>
 							Privacy Policy
 						</Link>
-						<Separator>|</Separator>
+						<Link
+							to="/hardware_website/terms-and-conditions"
+							style={{ color: "#fff", textDecoration: "none",  marginRight: "10px" }}
+						>
+							Terms & Conditions
+						</Link>
 						<Link
 							to="/hardware_website/Disclaimer"
 							style={{ color: "#fff", textDecoration: "none" }}
