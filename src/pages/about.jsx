@@ -8,6 +8,9 @@ const CounterContainer = styled.div`
 	grid-gap: 10px;
 	width: 40%;
 	margin: auto;
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 const Row = styled.div`
@@ -15,6 +18,9 @@ const Row = styled.div`
 	flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
 	align-items: center;
 	margin-bottom: 20px;
+	@media (max-width: 768px) {
+		flex-direction: column; 
+	}
 `;
 
 const TextContainer = styled.div`
