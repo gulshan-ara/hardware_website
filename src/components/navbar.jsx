@@ -47,10 +47,10 @@ export const NavBar = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="ml-auto">
-						<Link to="/hardware_website" className="nav-link">
+						<Link to="/hardware_website/" className="nav-link">
 							Home
 						</Link>
-						<Link to="#" className="nav-link">
+						<Link to="/hardware_website/about-us" className="nav-link">
 							About Us
 						</Link>
 						<Link to="#" className="nav-link">

@@ -8,6 +8,7 @@ import Disclaimer from "./pages/disclaimer";
 import Privacy from "./pages/privacy";
 import Career from "./pages/career";
 import TermsnConditions from "./pages/termsnconditions";
+import AboutUs from "./pages/about";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<NavBar />
 			<Routes>
 				<Route exact path="/hardware_website" element={<Home />} />
+				<Route path="/hardware_website/about-us" element={<AboutUs />} />
 				<Route path="/hardware_website/contact-us" element={<ContactUs />} />
 				<Route path="/hardware_website/disclaimer" element={<Disclaimer />}/>
 				<Route path="/hardware_website/privacy-policy" element={<Privacy />}/>
